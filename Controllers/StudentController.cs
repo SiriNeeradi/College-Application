@@ -185,12 +185,17 @@ namespace CollegeApp.Controllers
             return NoContent();
         }
 
+
+
+
         [HttpDelete]
         [Route("{id:int}", Name = "DeleteStudentByID")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        //api/Student/delete/1
+        //
         public ActionResult<bool> DeleteStudentById(int id)
         {
             //BadRequest

@@ -195,7 +195,7 @@ namespace CollegeApp.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         //api/Student/delete/1
-        //
+        //example
         public ActionResult<bool> DeleteStudentById(int id)
         {
             //BadRequest

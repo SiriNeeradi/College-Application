@@ -1,0 +1,11 @@
+#Visual Studio
+.vs
+bin/
+obj/
+
+#UiPath local Folders
+.project/
+
+#Temp files
+*.tmp
+*.log

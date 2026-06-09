@@ -16,6 +16,7 @@ namespace CollegeApp.Models
         [Required(ErrorMessage = "Address should not be empty")]
         public string Address { get; set; }
 
+        public DateTime DOB { get; set; }
 
         //public string Password { get; set; }
         //[Compare(nameof(Password))]

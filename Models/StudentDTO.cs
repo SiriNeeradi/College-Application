@@ -1,5 +1,4 @@
 ﻿using CollegeApp.Validations;
-using DataAnnotationsExtensions;
 using System.ComponentModel.DataAnnotations;
 
 namespace CollegeApp.Models
@@ -12,7 +11,7 @@ namespace CollegeApp.Models
         public string Name { get; set; }
         [Range(18, 22)]
         public int Age { get; set; }
-        [Email]
+        [EmailAddress]
         public string Email { get; set; }
         [Required(ErrorMessage = "Address should not be empty")]
         public string Address { get; set; }

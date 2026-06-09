@@ -1,4 +1,12 @@
+using CollegeApp.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<CollegeDBContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnection"));
+});
 
 // Add services to the container.
 

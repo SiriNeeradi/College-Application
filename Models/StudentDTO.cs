@@ -8,7 +8,7 @@ namespace CollegeApp.Models
         public int Id { get; set; }
         [Required(ErrorMessage = "Nmae should not be empty")]
         [StringLength(30)]
-        public string Name { get; set; }
+        public string StudentName { get; set; }
         [Range(18, 22)]
         public int Age { get; set; }
         [EmailAddress]

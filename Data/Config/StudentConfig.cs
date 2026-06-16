@@ -34,7 +34,6 @@ namespace CollegeApp.Data.Config
                     Email       = "tom@gmail.com",
                     DOB         = new DateTime(2022, 10, 12)
                 }
-
             });
         }
     }
